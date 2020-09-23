@@ -1,0 +1,21 @@
+/*0 to 480px screen size*/
+@media only screen and(max-width: 480px) {}
+
+/*0 to 767px screen size*/
+@media only screen and(max-width: 767px) {}
+
+/*0 to 1023px screen size*/
+@media only screen and(max-width: 1023px) {}
+
+/*0 to 1200px screen size*/
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+        width: 100%;
+        padding-left: 4%;
+
+    }
+
+    .row {
+        padding: 0 2%;
+    }
+}
