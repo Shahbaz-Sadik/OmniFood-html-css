@@ -57,6 +57,11 @@ body{
     margin-right: 5px;
 }
 
+
+/*
+Header
+*/
+
 header {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.40)), to(rgba(0, 0, 0, 0.40))), url(img/hero.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(img/hero.jpg);
@@ -189,6 +194,27 @@ input[type=submit]:active {
     margin-top: 40px;
 }
 
+/*   
+sticky nav
+*/
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.144);
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 8px 0 8px 0;
+    color: rgb(230, 160, 9);
+
+ 
+}
+
+
 .main-nav {
     float: right;
     list-style: none;
@@ -218,6 +244,13 @@ input[type=submit]:active {
 .main-nav li a:active {
     border-bottom: 4px solid #e67e22;
 }
+
+/*
+
+section Meals
+
+*/
+
 
 .section-meals {
     padding-top: 10px;
@@ -318,7 +351,6 @@ how to work section
     display: inline-block;
     text-align: center;
     margin-right: 25px;
-    float: left;
     padding: 5px;
     padding-top: 10px
 }
