@@ -1,5 +1,5 @@
 /* to 480px screen size*/
-@media only screen and(max-width: 480px) {
+@media only screen and (max-width: 480px) {
     section {
         padding: 25px 0;
     }
@@ -14,7 +14,7 @@
 }
 
 /* to 767px screen size*/
-@media only screen and(max-width: 767px) {
+@media only screen and (max-width: 767px) {
     body {
         font-size: 16px;
     }
