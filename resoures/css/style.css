@@ -1,4 +1,4 @@
-. {
+*{
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
@@ -13,7 +13,7 @@ body{
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
-    overflow-x: hidden;
+    overflow-x: hidden; 
 }
 
 .row {
@@ -21,7 +21,8 @@ body{
     margin: 0 auto;
 }
 
-.box {}
+
+
 
 
 .clearfix {
@@ -80,9 +81,9 @@ header {
     transform: translate(-50%, -50%);
 }
 
-section {
-    margin: 20px 0;
-
+section{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 h1,
@@ -101,6 +102,7 @@ h1 {
 }
 
 h2 {
+    margin-top: 3%;
     font-size: 180%;
     word-spacing: 2px;
     text-align: center;
@@ -187,33 +189,48 @@ input[type=submit]:active {
     color: #fff;
 }
 
-.logo {
+.logo{
     height: 100px;
     width: auto;
     float: left;
     margin-top: 40px;
 }
 
+.logo-black{
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+}
+
 /*   
 sticky nav
 */
 
-.sticky{
+.sticky {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.144);
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
 }
+
+.sticky .main-nav { margin-top: 18px; }
 
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
-    padding: 8px 0 8px 0;
-    color: rgb(230, 160, 9);
-
- 
+    padding: 16px 0;
+    color: #555;
 }
 
+.sticky .logo { display: none; }
+.sticky .logo-black { display: block; }
+/*
+main nav
+*/
 
 .main-nav {
     float: right;
@@ -348,11 +365,12 @@ how to work section
     width: 54px;
     border: 2px solid #e67e22;
     border-radius: 50%;
-    display: inline-block;
+    display: block;
     text-align: center;
     margin-right: 25px;
     padding: 5px;
-    padding-top: 10px
+    padding-top: 10px;
+    float: left;
 }
 
 .btn-app:link,
