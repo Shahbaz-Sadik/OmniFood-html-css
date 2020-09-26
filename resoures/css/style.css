@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -64,7 +63,6 @@ Header
 */
 
 header {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.40)), to(rgba(0, 0, 0, 0.40))), url(img/hero.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(img/hero.jpg);
     height: 100vh;
     background-size: cover;
@@ -77,13 +75,12 @@ header {
     width: 1140px;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
 section{
-    margin-top: 20px;
-    margin-bottom: 20px;
+
+    padding: 80px 0;
 }
 
 h1,
@@ -134,7 +131,6 @@ a:link,
 a:active {
     color: #e67e22;
     text-decoration: none;
-    -webkit-transition: color 0.4s;
     transition: color 0.4s;
 
 }
@@ -159,7 +155,6 @@ input[type=submit] {
     font-weight: 300;
     text-decoration: none;
     border-radius: 200px;
-    -webkit-transition: background-color 0.4s, border 0.4s, color 0.4s;
     transition: background-color 0.4s, border 0.4s, color 0.4s;
 
 
@@ -228,6 +223,23 @@ sticky nav
 
 .sticky .logo { display: none; }
 .sticky .logo-black { display: block; }
+
+
+/* Mobile navi */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
+
+
 /*
 main nav
 */
@@ -252,7 +264,6 @@ main nav
     text-transform: uppercase;
     font-size: 90%;
     border-bottom: 2px solid transparent;
-    -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
 
 }
@@ -297,18 +308,12 @@ section Meals
     opacity: 0.7;
     width: 100%;
     height: auto;
-    -webkit-transform: scale(1.15);
     transform: scale(1.15);
-    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
-    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
-    transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: transform 0.5s, opacity 0.5s;
-    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 
 .meal-photo img:hover {
     opacity: 1;
-    -webkit-transform: scale(1.03);
     transform: scale(1.03);
 }
 
@@ -402,8 +407,6 @@ section cities
     height: auto;
     margin-bottom: 15px;
 
-    -webkit-transform: scale(1.01);
-
     transform: scale(1.01);
 
 
@@ -419,14 +422,8 @@ section cities
 .city-img:hover {
 
 
-    -webkit-transform: scale(1.05);
-
-
     transform: scale(1.05);
-    -webkit-transition: opacity 0.5s, -webkit-transform 0.8s;
-    transition: opacity 0.5s, -webkit-transform 0.8s;
     transition: transform 0.8s, opacity 0.5s;
-    transition: transform 0.8s, opacity 0.5s, -webkit-transform 0.8s;
 }
 
 /*
@@ -435,7 +432,6 @@ customar testimonials
 */
 
 .section-testimonial {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.76)), to(rgba(0, 0, 0, 0.8))), url(img/back-customers.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
     background-size: cover;
     color: #fff;
@@ -491,7 +487,6 @@ sections plans
     width: 90%;
     margin-left: 5%;
     margin-bottom: 5%;
-    -webkit-box-shadow: 2px 2px 2px 2px #d8d8d8;
     box-shadow: 2px 2px 2px 2px #d8d8d8;
     padding: 5%;
 
@@ -613,3 +608,29 @@ footer div p {
     text-align: center;
     color: #888;
 }
+
+
+/* ----------------------------------------------- */
+/* Animations */
+/* ----------------------------------------------- */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3
+{
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-4 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
+}
+

@@ -13,6 +13,7 @@
     <link rel="stylesheet" , type="text/css" , href="resoures/css/queries.css">
     <link rel="stylesheet" , type="text/css" , href="vendor/css/grid.css">
     <link rel="stylesheet" , type="text/css" , href="vendor/css/normalize.css">
+    <link rel="stylesheet" , type="text/css" , href="vendor/css/animate.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
         rel="stylesheet">
@@ -26,19 +27,19 @@
             <div class="row">
                 <img src="resoures/img/logo-white.png" alt="logo" class="logo">
                 <img src="resoures/img/logo.png" alt="logo" class="logo-black">
-                <ul class="main-nav">
-                    <li><a href="#">Food delivery</a></li>
-                    <li><a href="#">How it works</a></li>
-                    <li><a href="#">Our cities</a></li>
-                    <li><a href="#">Sign up</a></li>
-
+                <ul class="main-nav js--main-nav">
+                    <li><a href="#plans">Food delivery</a></li>
+                    <li><a href="#works">How it works</a></li>
+                    <li><a href="#cities">Our cities</a></li>
+                    <li><a href="#signup">Sign up</a></li>
                 </ul>
+                <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
             </div>
         </nav>
         <div class="hero-text-box">
             <h1>Goodbye junk food.<br> Hello super healthy meals.</h1>
-            <a class="btn btn-full" href="#">I’m hungry</a>
-            <a class="btn btn-ghost" href="#">Show me more</a>
+            <a class="btn btn-full js--scroll-to-plans" href="#">I’m hungry</a>
+            <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
         </div>
     </header>
 
@@ -53,7 +54,7 @@
         </div>
 
 
-        <div class="row">
+        <div class="row js--wp-1">
             <div class="col span-1-of-4 box">
                 <i class="material-icons icon-big">cloud</i>
                 <h3>Up to 365 days/year</h3>
@@ -146,7 +147,7 @@
             <h2>How it works &mdash; Simple as 1, 2, 3</h2>
         </div>
         <div class="row">
-            <div class="col span-1-of-2 steps-box">
+            <div class="col span-1-of-2 steps-box js--wp-2">
                 <img src="resoures/img/app-iPhone.png" alt="Omnifood app on iPhone" class="app-screen js--wp-2">
             </div>
             <div class="col span-1-of-2 steps-box">
@@ -170,11 +171,11 @@
         </div>
     </section>
 
-    <section class="section-cities">
+    <section class="section-cities" id="cities">
         <div class="row">
             <h2>We're currently in these cities</h2>
         </div>
-        <div class="row">
+        <div class="row js--wp-3">
             <div class="col span-1-of-4 box">
                 <img src="resoures/img/lisbon-3.jpg" class="city-img">
                 <h3>Lisbon</h3>
@@ -282,13 +283,13 @@
 
     </section>
 
-    <section class="section-plans">
+    <section class="section-plans js--section-plans" id="plans">
         <div clsaa="row">
             <h2>Start eating healthy today</h2>
         </div>
         <div class="row">
             <div class="col span-1-of-3">
-                <div class="plan-box">
+                <div class="plan-box js--wp-4">
                     <div>
                         <h3>Premium</h3>
                         <p class="paln-price">$399 <span>/ month</span></p>
@@ -355,7 +356,7 @@
     </section>
 
 
-    <section class="section-form">
+    <section class="section-form" id="signup">
         <div class="row">
             <h2>We're happy to hear from you</h2>
         </div>
